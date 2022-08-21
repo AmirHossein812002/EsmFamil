@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" styleClass="darkPane" stylesheets="@StyleSheet" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UserUI">
+   <children>
+      <Circle layoutX="200.0" layoutY="106.0" radius="81.0" stroke="BLACK" strokeType="INSIDE">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.12941177189350128" green="0.5764706134796143" blue="0.6901960968971252" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.4569283025045015">
+                     <color>
+                        <Color red="0.12941177189350128" green="0.5764706134796143" blue="0.6901960968971252" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.4274509847164154" green="0.8352941274642944" blue="0.929411768913269" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Circle>
+      <TextField fx:id="userName" alignment="CENTER_RIGHT" layoutX="111.0" layoutY="225.0" prefHeight="42.0" prefWidth="179.0" promptText="نام کاربری">
+         <font>
+            <Font name="2  Kamran" size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="save" layoutX="145.0" layoutY="363.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="48.0" prefWidth="110.0" styleClass="btn" stylesheets="@StyleSheet" text="ذخیره">
+         <font>
+            <Font name="2  Kamran Bold" size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="passWord" alignment="CENTER_RIGHT" layoutX="111.0" layoutY="286.0" prefHeight="42.0" prefWidth="179.0" promptText="رمز عبور">
+         <font>
+            <Font name="2  Kamran" size="16.0" />
+         </font>
+      </TextField>
+      <FontAwesomeIcon fill="WHITE" glyphName="USER" layoutX="177.0" layoutY="130.0" size="5em" />
+   </children>
+</AnchorPane>

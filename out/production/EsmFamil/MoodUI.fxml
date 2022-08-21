@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="450.0" styleClass="darkPane" stylesheets="@StyleSheet" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MoodUI">
+   <children>
+      <Button layoutX="318.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#nextC" prefHeight="57.0" prefWidth="116.0" styleClass="btn" stylesheets="@StyleSheet" text="بعدی">
+         <font>
+            <Font name="2  Kamran Bold" size="24.0" />
+         </font>
+      </Button>
+      <Text fill="#fcfcfc" layoutX="107.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="نوع بازی را انتخاب کنید:">
+         <font>
+            <Font name="2  Kamran Bold" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="44.0" layoutX="61.0" layoutY="62.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="44.0" layoutX="381.0" layoutY="63.0" rotate="180.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <HBox layoutX="23.0" layoutY="100.0" prefHeight="144.0" prefWidth="400.0" spacing="30.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+         <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+         </padding>
+         <children>
+            <Button fx:id="timer" mnemonicParsing="false" onMouseClicked="#timer" prefHeight="123.0" prefWidth="173.0" styleClass="btn" stylesheets="@StyleSheet" text="زمان دار">
+               <font>
+                  <Font name="2  Kamran Bold" size="36.0" />
+               </font>
+            </Button>
+            <Button fx:id="finishPressed" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#finishPressed" prefHeight="123.0" prefWidth="173.0" styleClass="btn" stylesheets="@StyleSheet" text="اعلام تمامی">
+               <font>
+                  <Font name="2  Kamran Bold" size="36.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <Text fill="#fcfcfc" layoutX="130.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="زمان را انتخاب کنید">
+         <font>
+            <Font name="2  Kamran Bold" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="44.0" layoutX="89.0" layoutY="284.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="44.0" layoutX="356.0" layoutY="283.0" rotate="180.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Spinner fx:id="timeSpinner" disable="true" layoutX="173.0" layoutY="318.0" prefHeight="36.0" prefWidth="159.0" />
+      <Text fill="WHITE" layoutX="135.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ثانیه">
+         <font>
+            <Font name="2  Kamran" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#fcfcfc" layoutX="108.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="تعداد دور را انتخاب کنید">
+         <font>
+            <Font name="2  Kamran Bold" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="44.0" layoutX="67.0" layoutY="407.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="44.0" layoutX="378.0" layoutY="406.0" rotate="180.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Spinner fx:id="turnSpinner" layoutX="173.0" layoutY="443.0" prefHeight="36.0" prefWidth="159.0" />
+      <Text fill="WHITE" layoutX="137.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="دور">
+         <font>
+            <Font name="2  Kamran" size="24.0" />
+         </font>
+      </Text>
+      <VBox alignment="BOTTOM_CENTER" layoutX="173.0" layoutY="318.0" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #5babf0;">
+         <children>
+            <Text fx:id="timeTxt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+               <font>
+                  <Font name="2  Kamran Bold" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_CENTER" layoutX="173.0" layoutY="443.0" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #5babf0;">
+         <children>
+            <Text fx:id="turnTxt" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+               <font>
+                  <Font name="2  Kamran Bold" size="32.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

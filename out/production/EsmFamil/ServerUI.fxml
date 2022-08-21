@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" styleClass="darkPane" stylesheets="@StyleSheet" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ServerUI">
+   <children>
+      <Text fill="WHITE" layoutX="104.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="میزبان های موجود" wrappingWidth="191.1953125">
+         <font>
+            <Font name="2  Kamran Bold" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="44.0" layoutX="50.0" layoutY="32.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="44.0" layoutX="315.0" layoutY="32.0" rotate="180.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Button fx:id="makeServer" alignment="CENTER" layoutX="236.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#makeServer" prefHeight="53.0" prefWidth="119.0" styleClass="btn" stylesheets="@StyleSheet" text="ایجاد سرور">
+         <font>
+            <Font name="2  Kamran Bold" size="24.0" />
+         </font>
+      </Button>
+      <ScrollPane hbarPolicy="NEVER" layoutX="16.0" layoutY="63.0" prefHeight="308.0" prefWidth="369.0" style="-fx-background-radius: 5;" styleClass="scrol-bar" stylesheets="@StyleSheet" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="vBox" prefHeight="306.0" prefWidth="356.0" spacing="20.0" style="-fx-background-color: lightgray;" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="refresh" alignment="CENTER" layoutX="69.0" layoutY="383.0" mnemonicParsing="false" onMouseClicked="#refresh" prefHeight="53.0" prefWidth="119.0" styleClass="btn" stylesheets="@StyleSheet" text="بازیابی">
+         <font>
+            <Font name="2  Kamran Bold" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="347.0" prefWidth="258.0" styleClass="darkPane" stylesheets="@StyleSheet" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp">
+    <children>
+        <Button fx:id="cancel" alignment="CENTER" layoutX="37.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#cancel" prefHeight="31.0" prefWidth="90.0" styleClass="btn" stylesheets="@StyleSheet" text="انصراف" textAlignment="CENTER">
+            <font>
+                <Font name="2  Kamran Bold" size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="signUp" alignment="CENTER" layoutX="142.0" layoutY="270.0" mnemonicParsing="false" onMouseClicked="#signUp" prefHeight="31.0" prefWidth="90.0" styleClass="btn" stylesheets="@StyleSheet" text="ثبت نام" textAlignment="CENTER">
+            <font>
+                <Font name="2  Kamran Bold" size="24.0" />
+            </font>
+        </Button>
+        <TextField fx:id="userName" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="51.0" prefHeight="42.0" prefWidth="184.0" promptText="نام کاربری">
+            <font>
+                <Font name="2  Kamran Bold" size="19.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="passWord" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="117.0" prefHeight="42.0" prefWidth="184.0" promptText="رمز عبور">
+            <font>
+                <Font name="2  Kamran Bold" size="19.0" />
+            </font>
+        </PasswordField>
+      <TextField fx:id="passWordTxt" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="117.0" prefHeight="42.0" prefWidth="184.0" promptText="رمز عبور" visible="false">
+         <font>
+            <Font name="2  Kamran Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lightOn" layoutX="66.0" layoutY="117.0" mouseTransparent="true" prefHeight="42.0" prefWidth="155.5" />
+      <ImageView fx:id="flashLight" fitHeight="30.0" fitWidth="38.0" focusTraversable="true" layoutX="37.0" layoutY="123.0" onMouseClicked="#showPassword" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@flashlight-app-icon-11.jpg" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passWordRe" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="182.0" prefHeight="42.0" prefWidth="184.0" promptText="تکرار رمز عبور">
+         <font>
+            <Font name="2  Kamran Bold" size="19.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="passWordTxtRe" alignment="CENTER_RIGHT" layoutX="37.0" layoutY="182.0" prefHeight="42.0" prefWidth="184.0" promptText="تکرار رمز عبور" visible="false">
+         <font>
+            <Font name="2  Kamran Bold" size="19.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lightOnRe" layoutX="66.0" layoutY="182.0" mouseTransparent="true" prefHeight="42.0" prefWidth="155.5" />
+      <ImageView fx:id="flashLightRe" fitHeight="30.0" fitWidth="38.0" focusTraversable="true" layoutX="37.0" layoutY="188.0" onMouseClicked="#showPassWordRe" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@flashlight-app-icon-11.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

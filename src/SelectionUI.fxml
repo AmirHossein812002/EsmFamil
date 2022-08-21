@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" styleClass="darkPane" stylesheets="@StyleSheet" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SelectionUI">
+   <children>
+      <Button layoutX="320.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#nextC" prefHeight="57.0" prefWidth="116.0" styleClass="btn" stylesheets="@StyleSheet" text="بعدی">
+         <font>
+            <Font name="2  Kamran Bold" size="24.0" />
+         </font>
+      </Button>
+      <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="33.0" layoutY="105.0" prefHeight="390.0" prefWidth="385.0" style="-fx-background-color: lightgray;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button fx:id="button" mnemonicParsing="false" onMouseClicked="#buttonC" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="اسم">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC1" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="فامیل" GridPane.columnIndex="1">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button2" layoutX="139.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC2" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="شهر" GridPane.columnIndex="2">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button3" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC3" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="کشور" GridPane.rowIndex="1">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button4" layoutX="10.0" layoutY="108.0" mnemonicParsing="false" onMouseClicked="#buttonC4" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="غذا" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button5" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC5" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="پوشاک" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button6" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC6" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="میوه" GridPane.rowIndex="2">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button7" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC7" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="ماشین" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button8" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC8" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="گل" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button9" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC9" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="حیوان" GridPane.rowIndex="3">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="button10" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#buttonC10" prefHeight="111.0" prefWidth="154.0" styleClass="catagoryBtn" stylesheets="@StyleSheet" text="اشیاء" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="2  Kamran Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <Text fill="#fcfcfc" layoutX="90.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 دسته بندی را انتخاب کنید:">
+         <font>
+            <Font name="2  Kamran Bold" size="36.0" />
+         </font>
+      </Text>
+      <Line endX="44.0" layoutX="44.0" layoutY="59.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="44.0" layoutX="404.0" layoutY="57.0" rotate="180.0" startX="-35.5" strokeWidth="3.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10980392247438431" green="0.16470588743686676" blue="0.21176470816135406" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.35686275362968445" green="0.6705882549285889" blue="0.9411764740943909" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+   </children>
+</AnchorPane>

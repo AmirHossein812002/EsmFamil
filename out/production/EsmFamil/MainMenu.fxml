@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="400.0" styleClass="parent" stylesheets="@StyleSheet" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenu">
+   <children>
+      <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="400.0" spacing="50.0" styleClass="darkMenu" stylesheets="@StyleSheet">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#openSetting" prefHeight="65.0" prefWidth="65.0" styleClass="mainBtn" stylesheets="@StyleSheet" text="Button">
+               <HBox.margin>
+                  <Insets left="7.0" />
+               </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon glyphName="GEAR" size="2em" styleClass="icons" />
+               </graphic></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#openUser" prefHeight="65.0" prefWidth="65.0" styleClass="mainBtn" stylesheets="@StyleSheet" text="Button">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon glyphName="USER" size="2em" styleClass="icons" />
+               </graphic>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="85.0" layoutY="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#openServer" prefHeight="65.0" prefWidth="65.0" styleClass="mainBtn" stylesheets="@StyleSheet" text="Button">
+               <HBox.margin>
+                  <Insets left="35.0" />
+               </HBox.margin>
+               <graphic>
+                  <FontAwesomeIcon glyphName="SERVER" onMouseClicked="#openServer" size="2em" styleClass="icons" text="" />
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Pane fx:id="pane" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="400.0" styleClass="darkPane" stylesheets="@StyleSheet">
+         <children>
+            <ImageView fitHeight="298.0" fitWidth="275.0" layoutX="63.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Intro.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+   </children>
+</AnchorPane>

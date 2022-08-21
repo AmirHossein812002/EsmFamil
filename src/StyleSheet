@@ -1,0 +1,68 @@
+.parent{
+    -fx-background-color: transparent;
+}
+.darkPane{
+    -fx-background-color: #1c2a36;
+}
+.darkMenu{
+    -fx-background-color: #45515F;
+}
+.mainBtn{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-text-fill: transparent;
+}
+.icons{
+    -fx-fill: #596575;
+}
+.mainBtn:hover{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0px;
+    -fx-border-color: #5babf0;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-border-radius: 0px;
+    -fx-text-fill: transparent;
+}
+.mainBtn:hover .icons{
+    -fx-fill: white;
+}
+.vbox{
+    -fx-background-radius: 20px;
+    -fx-background-color: #596575;
+}
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 25px;
+}
+.slider .thumb{
+    -fx-background-color: #5babf0;
+}
+.slider .track{
+    -fx-background-color: #5babf0;
+}
+.btn{
+    -fx-background-color: #596575;
+    -fx-background-radius: 25px;
+    -fx-text-fill: white;
+}
+.btn:hover{
+    -fx-background-color: #5babf0;
+    -fx-background-radius: 25px;
+    -fx-text-fill: white;
+}
+.scroll-bar:vertical .track{
+    -fx-background-color: white;
+}
+.scroll-bar:vertical .thumb{
+    -fx-background-color: #5babf0;
+}
+.catagoryBtn{
+     -fx-background-color: #596575;
+     -fx-background-radius: 0px;
+     -fx-text-fill: white;
+}
+.catagoryBtn:hover{
+    -fx-background-color: #5babf0;
+    -fx-background-radius: 0px;
+    -fx-text-fill: white;
+}
